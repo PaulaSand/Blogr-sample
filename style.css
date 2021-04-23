@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background-color: orangered;
+  padding: 50px;
+}
+
+.upperHeader {
+  align-items: center;
+  display: flex;
+  padding-left: auto;
+}
+
+.navBar {
+  align-self: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+}
+
+.accessButtons {
+  margin-left: auto;
+}
+
+.button1 {
+  color: white;
+  background-color: orangered;
+  padding: 10px;
+  border: none;
+}
+
+.button2 {
+  color: orangered;
+  background-color: white;
+  padding: 10px;
+  border: orangered;
+  border-radius: 20px;
+  margin: 10px;
+}
+.button3 {
+  color: white;
+  background-color: orangered;
+  padding: 10px;
+  border: white solid 1px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+ul {
+  margin-left: 20px;
+  color: white;
+  display: flex;
+}
+.centralHeader {
+  text-align: center;
+}
+
+h1 {
+  height: 50px;
+  display: block;
+  color: white;
+
+  padding: 20px;
+}
+
+p {
+  color: white;
+
+  padding: 20px;
+}
+
+.continueButton {
+  display: flex;
+}
+
+.section {
+  display: flex;
+}
+
+.withTitle {
+  display: block;
+}
+.sectionTitle {
+  text-align: center;
+}
+.simpleBox {
+  display: flex;
+}
+.componentsOffered {
+  margin: 20px;
+}
+.darkBackground {
+  background-color: rgb(62, 62, 90);
+  background-image: url("images/bg-pattern-circles.svg");
+  display: block;
+}
+.imageBox {
+  width: 50%;
+}
+
+.footer {
+  background-color: rgb(40, 37, 49);
+  padding: 50px;
+  color: white;
+}
