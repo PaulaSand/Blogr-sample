@@ -17,6 +17,7 @@ body {
 header {
   background-color: orangered;
   padding: 50px;
+  border-radius: 0 0 0 90px;
 }
 
 .upperHeader {
@@ -65,6 +66,10 @@ ul {
   color: white;
   display: flex;
 }
+li{
+  list-style: none;
+  margin-right: 20px;
+}
 .centralHeader {
   text-align: center;
 }
@@ -73,13 +78,13 @@ h1 {
   height: 50px;
   display: block;
   color: white;
-
+  font-style: <link rel="preconnect" href="https://fonts.gstatic.com">;
   padding: 20px;
 }
 
 p {
   color: white;
-
+  font-style: <link rel="preconnect" href="https://fonts.gstatic.com">;
   padding: 20px;
 }
 
@@ -93,9 +98,21 @@ p {
 
 .withTitle {
   display: block;
+  background-image: url(images/illustration-editor-desktop.svg) ;
+  background-repeat: no-repeat ;
+  background-position: 190%;
 }
 .sectionTitle {
   text-align: center;
+  margin: 50px;
+  
+  
+}
+.textBox{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+  max-width: 600px;
 }
 .simpleBox {
   display: flex;
@@ -104,16 +121,48 @@ p {
   margin: 20px;
 }
 .darkBackground {
+
   background-color: rgb(62, 62, 90);
   background-image: url("images/bg-pattern-circles.svg");
-  display: block;
+  display: flex;
+  border-radius: 0 90px 0 90px;
+  
+}
+.darkBackground .imageBox{
+  display:flex;
+  align-content: center;
+  justify-content: center;
+
+}
+.darkBackground img{
+   
 }
 .imageBox {
+  overflow: hidden;
+  max-height: 600px;
   width: 50%;
+  max-width: 925px;
+}
+
+img{
+  
 }
 
 .footer {
   background-color: rgb(40, 37, 49);
   padding: 50px;
   color: white;
+  display: flex;
+  border-radius: 0 90px 0 0;
+}
+
+.navigatorFooter{
+  margin: 0 50 0 50;
+}
+.footer ul{
+  margin: auto;
+  display:block;
+}
+.footer li{
+  color:  hsl(240, 2%, 79%);
 }
