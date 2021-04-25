@@ -1,5 +1,8 @@
+/*---------GENERAL---------*/
+
 html {
   box-sizing: border-box;
+  
 }
 
 *,
@@ -14,10 +17,18 @@ body {
   background-color: white;
 }
 
+/*---------HEADER---------*/
+
 header {
   background-color: orangered;
+  background-image: url(images/bg-pattern-intro.svg);
+  background-size: 230%;
+  background-position: -400px ;
+  background-repeat: no-repeat;
   padding: 50px;
   border-radius: 0 0 0 90px;
+  height: 525px;
+  
 }
 
 .upperHeader {
@@ -28,8 +39,8 @@ header {
 
 .navBar {
   align-self: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 
@@ -72,6 +83,8 @@ li{
 }
 .centralHeader {
   text-align: center;
+  
+
 }
 
 h1 {
@@ -92,15 +105,24 @@ p {
   display: flex;
 }
 
+/*---------SECTIONS---------*/
+
 .section {
   display: flex;
 }
 
 .withTitle {
   display: block;
+  height: 800px;
+  /*background-image: url(images/illustration-editor-desktop.svg) ;
+  background-repeat: no-repeat ;
+  background-position: 190%;*/
+}
+.withTitle .imageBox{
   background-image: url(images/illustration-editor-desktop.svg) ;
   background-repeat: no-repeat ;
-  background-position: 190%;
+  background-position:600px  ;
+  background-size: 600px;
 }
 .sectionTitle {
   text-align: center;
@@ -111,11 +133,12 @@ p {
 .textBox{
   margin-top: auto;
   margin-bottom: auto;
-  width: 50%;
-  max-width: 600px;
+  /*width: 50%;
+  max-width: 600px;*/
 }
 .simpleBox {
   display: flex;
+  max-height: 600px;
 }
 .componentsOffered {
   margin: 20px;
@@ -126,27 +149,35 @@ p {
   background-image: url("images/bg-pattern-circles.svg");
   display: flex;
   border-radius: 0 90px 0 90px;
+  max-height: 300px;
+  
   
 }
 .darkBackground .imageBox{
   display:flex;
   align-content: center;
   justify-content: center;
+  margin-top: -100px;
+  padding
+}
 
-}
-.darkBackground img{
-   
-}
 .imageBox {
-  overflow: hidden;
-  max-height: 600px;
+  
+  max-height: 500px;
   width: 50%;
-  max-width: 925px;
-}
-
-img{
   
 }
+
+.darkBackground .imageBox img{
+  height: 500px;
+}
+
+.darkBackground .textBox{
+  width: 50%;
+  color: white;
+}
+
+/*---------FOOTER---------*/
 
 .footer {
   background-color: rgb(40, 37, 49);
@@ -166,3 +197,12 @@ img{
 .footer li{
   color:  hsl(240, 2%, 79%);
 }
+
+/*---------MOVILE---------*/
+
+/*@media (607px)
+-pasar todo a display block, 
+excepto el logo + menú de navegación compacto 
+y los botones deh central header
+-poner tamaños máximos a las imágenes
+-tal vez haya que modificar los border radius*/
